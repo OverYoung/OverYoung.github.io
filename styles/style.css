@@ -1,0 +1,45 @@
+/*
+css基于盒子模型
+p是选择器，选择器种类有很多，属性之间以分号隔开
+padding:内边距，围绕着内容（比如段落）的空间。
+border：即边框，紧接着内边距的线。
+margin：即外边距，围绕元素外部的空间。
+width ：元素的宽度
+background-color ：元素内容和内边距底下的颜色
+color ：元素内容（通常是文本）的颜色
+text-shadow ：为元素内的文本设置阴影
+display ：设置元素的显示模式（暂略）
+*/
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #00539f;
+}
+
+body {
+    width: 600px;/*固定宽度为600像素*/
+    margin: 0 auto;/*上下外边距为0，左右居中*/
+    background-color: #FF9500;/*背景颜色*/
+    padding: 0 20px 20px 20px;/*内边距 上右左下*/
+    border: 5px solid black;/*边框5个像素，颜色为黑*/
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    font-size: 60px;
+    text-shadow: 3px 3px 1px black;/*文本的阴影设置*/
+    text-align: center;/*文本对齐方式 居中*/
+}
+
+p,li {
+    font-size: 16px;
+    line-height: 2;/*行高2倍*/
+    letter-spacing: 1px;/*字符间距*/
+}
+
+img {
+    display: block;/*图片是内联元素，不是块级元素，需要使用这个属性给与其块级功能，否则下面的margin属性无效*/
+    margin: 0 auto;/*水平居中*/
+}
